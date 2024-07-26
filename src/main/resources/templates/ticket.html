@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #FFFFFF;
+            margin: 30;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .ticket-container {
+            background-color: #fff;
+            width: 480px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 200px rgba(0,0,0,0.1);
+            padding: 60px;
+            border-radius: 100px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: px;
+        }
+        .header img {
+            width: 190px;
+            height: 190px;
+        }
+        h1 {
+            color: #DC6E1A; /* redVintage */
+            font-size: 21px;
+            margin: 0;
+        }
+        h2 {
+            color: #5F2C1A; /* Naranja */
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+            color: #C97A31; /* Gris oscuro */
+            font-size: 18px;
+        }
+        span {
+            color: #DC6E1A; /* Negro */
+        }
+        .section {
+            margin-bottom: 5px;
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        .ticket-id {
+            font-size: 16px; /* Tamaño de fuente */
+            color: #DC6E1A; /* Color del texto */
+            font-weight: bold; /* Negrita */
+            margin-top: 5px; /* Margen superior */
+        }
+    </style>
+</head>
+<body>
+<div class="ticket-container">
+    <div class="header">
+        <img src="https://i.imgur.com/v8JE2nj.png" alt="QR"/>
+        <h1>Boarding pass</h1>
+        <p>Ticket Id - <span th:text="${ticket.id}"></span></p>
+    </div>
+
+    <div class="section">
+        <h2>Passenger</h2>
+        <ul>
+            <li>Name: <span th:text="${ticket.passenger.name}"></span></li>
+            <li>Lastname: <span th:text="${ticket.passenger.lastName}"></span></li>
+            <li>DNI: <span th:text="${ticket.passenger.dni}"></span></li>
+            <li>Birthdate: <span th:text="${ticket.passenger.birthDate}"></span></li>
+            <li>Email: <span th:text="${ticket.passenger.email}"></span></li>
+            <li>Cellphone: <span th:text="${ticket.passenger.numberCel}"></span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Flight Info</h2>
+        <ul>
+            <li>Airline: <span th:text="${ticket.passenger.reservation.flight.airline}"></span></li>
+            <li>Origin Airport: <span th:text="${ticket.passenger.reservation.flight.originAirport}"></span></li>
+            <li>Destination Airport: <span th:text="${ticket.passenger.reservation.flight.destinationAirport}"></span></li>
+            <li>Departure Date: <span th:text="${ticket.passenger.reservation.flight.departureDate}"></span></li>
+            <li>Departure Time: <span th:text="${ticket.passenger.reservation.flight.departureTime}"></span> - Remember to be in the lounge two hours before your flight.</li>
+            <li>Arrival Date: <span th:text="${ticket.passenger.reservation.flight.arrivalDate}"></span></li>
+            <li>Flight Duration: <span th:text="${ticket.passenger.reservation.flight.flightDuration}"></span> hours</li>
+            <li>Seat: <span th:text="${ticket.seat}"></span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Reservation</h2>
+        <ul>
+            <li>Category: <span th:text="${ticket.passenger.reservation.category}"></span></li>
+            <!-- Más campos según los atributos de Passenger -->
+        </ul>
+    </div>
+    <div class="header">
+        <h1>Fly high, fly with us</h1>
+    </div>
+</div>
+</body>
+</html>
