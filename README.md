@@ -20,6 +20,15 @@
 - **Visualización de tickets:** Permitiendo a los usuarios ver sus tickets.
 - **Generación de tickets electrónicos:** ras la confirmación de la reserva, se envía el PDF del ticket y la información de la reserva por correo electrónico.
 
+### Check-in
+Para completar el proceso de check-in y obtener un pase de abordar en formato PDF, se realizan dos verificaciones clave:
+1. **Verificación del DNI:** El DNI ingresado por el pasajero debe coincidir con el ID de la reservación proporcionada.
+2. **Validación del Tiempo de Check-in:** El check-in debe realizarse entre 24 horas y 1 hora antes del vuelo programado.
+
+<div align="center">
+      <img src="ImagesREADME/Ticket500.jpg" alt="TicketPDF">
+</div>
+
 ---
 
 ### Tecnologias utilizadas
@@ -49,3 +58,11 @@ Si deseas explorarlo, accede al siguiente enlace:
 <a href="https://github.com/SantiagoGZ1/Aerolinea_EveryOneFlies/graphs/contributors" target="_blank">
   <img src="ImagesREADME/participantes.png" alt="participantes">
 </a>
+
+## Expresiones de Gratitud
+
+Nuestro equipo da las gracias al equipo de BeTek por su constante apoyo. Hicieron que esta experiencia no sólo estuviera llena de conocimientos para nuestro futuro profesional 📚, sino también llena de risas 😂, nuevos amigos 🤝 y compañía.
+
+Damos también las gracias a nuestros compañeros. Ellos estuvieron ahí incontables veces cuando no entendíamos algo 🤔, nos dieron una voz de ánimo cuando estuvimos cansados y a veces, rendidos 💪.
+
+Y por supuesto, a los familiares, parejas y amigos que de alguna u otra forma manifestaron su amor ❤️ para que lográramos llegar al final de este proceso 🏁.
