@@ -22,6 +22,7 @@ public class FareService {
 
     @Autowired
 
+
     public FareService(FareRepository fareRepository, FlightRepository flightRepository) {
         this.fareRepository = fareRepository;
         this.flightRepository = flightRepository;
