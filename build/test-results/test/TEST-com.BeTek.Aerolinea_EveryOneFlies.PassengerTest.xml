@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:35" hostname="SANTIAGO" time="0.716">
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:55:56" hostname="SANTIAGO" time="0.42">
   <properties/>
-  <testcase name="passengerListWithDniNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.417"/>
-  <testcase name="passengerAlreadyCreated()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.01"/>
-  <testcase name="passengerListWithInvalidDni()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.006"/>
-  <testcase name="deleteNoExistPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
-  <testcase name="passengerListWithLastNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.011"/>
-  <testcase name="cantUpdatePassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.011"/>
-  <testcase name="createPassangerDniNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.008"/>
-  <testcase name="createPassengerNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.009"/>
-  <testcase name="createPassangerEmailIsRequired()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
-  <testcase name="passengerListWithInvalidEmail()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.01"/>
+  <testcase name="passengerListWithDniNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.253"/>
+  <testcase name="passengerAlreadyCreated()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.006"/>
+  <testcase name="passengerListWithInvalidDni()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
+  <testcase name="deleteNoExistPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="passengerListWithLastNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.006"/>
+  <testcase name="cantUpdatePassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.003"/>
+  <testcase name="createPassangerDniNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
+  <testcase name="createPassengerNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
+  <testcase name="createPassangerEmailIsRequired()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.003"/>
+  <testcase name="passengerListWithInvalidEmail()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.006"/>
   <testcase name="getAllPassengers()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.002"/>
-  <testcase name="passengerListWithEmailNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.017"/>
-  <testcase name="passengerListWithBirthDateNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
-  <testcase name="noExistPassengerTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.011"/>
-  <testcase name="deletePassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.012"/>
-  <testcase name="createListPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.008"/>
-  <testcase name="getPassengerExist()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.015"/>
+  <testcase name="passengerListWithEmailNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="passengerListWithBirthDateNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="noExistPassengerTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
+  <testcase name="deletePassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="createListPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.012"/>
+  <testcase name="getPassengerExist()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
   <testcase name="createPassengerDniMustBeNumeric()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
   <testcase name="updatePassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
-  <testcase name="passengerListWithPhoneNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
-  <testcase name="createPassangerEmailFormatWrong()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.01"/>
-  <testcase name="passengerListWithNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.007"/>
-  <testcase name="createPassangerLastNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.01"/>
-  <testcase name="cantCreateListPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
-  <testcase name="createPassangerBirthDateIsNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.011"/>
-  <testcase name="createPassengerTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
-  <testcase name="createPassangerNumberCellIsNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="passengerListWithPhoneNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
+  <testcase name="createPassangerEmailFormatWrong()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.003"/>
+  <testcase name="passengerListWithNameNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.005"/>
+  <testcase name="createPassangerLastNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.003"/>
+  <testcase name="cantCreateListPassenger()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.002"/>
+  <testcase name="createPassangerBirthDateIsNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.01"/>
+  <testcase name="createPassengerTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.002"/>
+  <testcase name="createPassangerNumberCellIsNull()" classname="com.BeTek.Aerolinea_EveryOneFlies.PassengerTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

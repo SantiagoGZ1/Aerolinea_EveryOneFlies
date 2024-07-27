@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.088s</div>
+<div class="counter">1.937s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">2.088s</td>
+<td class="success">1.937s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -91,8 +91,8 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-10:47:57.454 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplicationTests]: AerolineaEveryOneFliesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:47:58.135 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplication for test class com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplicationTests
+10:55:14.155 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplicationTests]: AerolineaEveryOneFliesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:55:14.535 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplication for test class com.BeTek.Aerolinea_EveryOneFlies.AerolineaEveryOneFliesApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -103,23 +103,23 @@
 
  :: Spring Boot ::                (v3.3.1)
 
-2024-07-27T10:48:00.895-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : Starting AerolineaEveryOneFliesApplicationTests using Java 22.0.1 with PID 10536 (started by santi in D:\Aerolinea_EveryOneFlies)
-2024-07-27T10:48:00.900-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-07-27T10:48:06.354-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-27T10:48:06.844-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 422 ms. Found 5 JPA repository interfaces.
-2024-07-27T10:48:10.362-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-27T10:48:10.640-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-27T10:48:10.795-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-07-27T10:48:12.225-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-27T10:48:12.315-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-07-27T10:48:15.066-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31fe0ce5
-2024-07-27T10:48:15.070-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-07-27T10:48:15.317-05:00  WARN 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-27T10:48:18.700-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-27T10:48:21.895-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-27T10:48:25.820-05:00  WARN 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] o.thymeleaf.templatemode.TemplateMode    : [THYMELEAF][Test worker] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
-2024-07-27T10:48:27.040-05:00  WARN 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-27T10:48:29.604-05:00  INFO 10536 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : Started AerolineaEveryOneFliesApplicationTests in 30.549 seconds (process running for 36.001)
+2024-07-27T10:55:16.384-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : Starting AerolineaEveryOneFliesApplicationTests using Java 22.0.1 with PID 13928 (started by santi in D:\Aerolinea_EveryOneFlies)
+2024-07-27T10:55:16.389-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-27T10:55:19.972-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-27T10:55:20.192-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 5 JPA repository interfaces.
+2024-07-27T10:55:23.318-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-27T10:55:23.669-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-27T10:55:23.888-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-27T10:55:25.891-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-27T10:55:26.039-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-27T10:55:28.660-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18692e80
+2024-07-27T10:55:28.665-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-27T10:55:28.941-05:00  WARN 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-27T10:55:36.660-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-27T10:55:40.114-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-27T10:55:44.049-05:00  WARN 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] o.thymeleaf.templatemode.TemplateMode    : [THYMELEAF][Test worker] Unknown Template Mode 'HTML5'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2024-07-27T10:55:45.500-05:00  WARN 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-27T10:55:48.752-05:00  INFO 13928 --- [Aerolinea_EveryOneFlies] [    Test worker] A.AerolineaEveryOneFliesApplicationTests : Started AerolineaEveryOneFliesApplicationTests in 33.597 seconds (process running for 37.671)
 </pre>
 </span>
 </div>
@@ -141,7 +141,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at 27/07/2024, 10:48:38 a. m.</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at 27/07/2024, 10:55:59 a. m.</p>
 </div>
 </div>
 </body>

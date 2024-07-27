@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:31" hostname="SANTIAGO" time="3.594">
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:55:50" hostname="SANTIAGO" time="5.031">
   <properties/>
-  <testcase name="noExistFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="2.92"/>
-  <testcase name="getExistFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.162"/>
-  <testcase name="getAllFares()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.022"/>
-  <testcase name="cantDeleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.01"/>
-  <testcase name="deleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.012"/>
-  <testcase name="createFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.43"/>
+  <testcase name="noExistFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="3.807"/>
+  <testcase name="getExistFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.277"/>
+  <testcase name="getAllFares()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.084"/>
+  <testcase name="cantDeleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.011"/>
+  <testcase name="deleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.046"/>
+  <testcase name="createFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.722"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

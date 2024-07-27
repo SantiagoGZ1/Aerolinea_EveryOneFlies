@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:36" hostname="SANTIAGO" time="0.221">
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:55:56" hostname="SANTIAGO" time="0.164">
   <properties/>
-  <testcase name="deleteNoExistReservation()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.198"/>
-  <testcase name="getReservationTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.009"/>
-  <testcase name="cantGetReservation()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.009"/>
+  <testcase name="deleteNoExistReservation()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.145"/>
+  <testcase name="getReservationTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.01"/>
+  <testcase name="cantGetReservation()" classname="com.BeTek.Aerolinea_EveryOneFlies.ReservationTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

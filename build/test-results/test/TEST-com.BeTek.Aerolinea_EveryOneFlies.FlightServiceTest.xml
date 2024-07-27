@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:35" hostname="SANTIAGO" time="0.126">
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:55:55" hostname="SANTIAGO" time="0.129">
   <properties/>
-  <testcase name="getFlightNoExist()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.015"/>
-  <testcase name="updateFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.011"/>
-  <testcase name="createFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.003"/>
-  <testcase name="getAllFlights()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.004"/>
-  <testcase name="cantUpdateFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.012"/>
-  <testcase name="deleteFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.007"/>
-  <testcase name="deleteNoExistFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.017"/>
-  <testcase name="getFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.016"/>
+  <testcase name="getFlightNoExist()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.01"/>
+  <testcase name="updateFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.01"/>
+  <testcase name="createFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.007"/>
+  <testcase name="getAllFlights()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.003"/>
+  <testcase name="cantUpdateFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.011"/>
+  <testcase name="deleteFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.004"/>
+  <testcase name="deleteNoExistFlight()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.003"/>
+  <testcase name="getFlightTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FlightServiceTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
