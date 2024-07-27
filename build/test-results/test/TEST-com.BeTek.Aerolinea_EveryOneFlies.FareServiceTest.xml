@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:31" hostname="SANTIAGO" time="3.594">
+  <properties/>
+  <testcase name="noExistFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="2.92"/>
+  <testcase name="getExistFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.162"/>
+  <testcase name="getAllFares()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.022"/>
+  <testcase name="cantDeleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.01"/>
+  <testcase name="deleteFare()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.012"/>
+  <testcase name="createFareTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.FareServiceTest" time="0.43"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

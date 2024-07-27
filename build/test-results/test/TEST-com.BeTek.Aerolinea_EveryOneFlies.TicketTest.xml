@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-07-27T15:48:36" hostname="SANTIAGO" time="0.491">
+  <properties/>
+  <testcase name="createTicketPdf()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.405"/>
+  <testcase name="GetTicket()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.006"/>
+  <testcase name="UpdateTicketTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.01"/>
+  <testcase name="deleteTicketTest()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.018"/>
+  <testcase name="GetAllTickets()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.01"/>
+  <testcase name="cantUpdateTicket()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.005"/>
+  <testcase name="notFoundTicket()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.007"/>
+  <testcase name="createTicketTest_PassengerNotFound()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.008"/>
+  <testcase name="deleteNoExistTicket()" classname="com.BeTek.Aerolinea_EveryOneFlies.TicketTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
