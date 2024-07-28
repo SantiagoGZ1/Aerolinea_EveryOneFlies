@@ -5,6 +5,7 @@ import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.dialogflow.v2.*;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,16 +17,18 @@ import java.io.IOException;
 @Configuration
 
 public class DialogflowConfig {
-    String jsonPath = System.getenv("GOOGLE_APPLICATION_CREDENTIALS");
+
+    private static final Dotenv dotenv = Dotenv.load();
+
     @Bean
     public SessionsClient sessionsClient() throws IOException {
-        // Ruta al archivo JSON de las credenciales
-
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(jsonPath));
+        String credentialsPath = dotenv.get("GOOGLE_APPLICATION_CREDENTIALS");
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(credentialsPath));
         SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
                 .build();
 
         return SessionsClient.create(sessionsSettings);
     }
+
 }

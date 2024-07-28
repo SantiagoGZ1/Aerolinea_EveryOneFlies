@@ -35,5 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
-/src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-8c22e9d42603.json
 /src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-a6535c7551e6.json
+
+### ENV ###
+.env

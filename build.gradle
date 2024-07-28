@@ -60,6 +60,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'com.google.cloud:google-cloud-dialogflow:2.4.0'
 
+	//Env
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
 }
 
 tasks.named('test') {
