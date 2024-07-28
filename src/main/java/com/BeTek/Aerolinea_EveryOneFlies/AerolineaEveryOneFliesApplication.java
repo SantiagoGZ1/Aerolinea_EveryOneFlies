@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 public class AerolineaEveryOneFliesApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("GOOGLE_APPLICATION_CREDENTIALS", System.getenv("GOOGLE_APPLICATION_CREDENTIALS"));
 		SpringApplication.run(AerolineaEveryOneFliesApplication.class, args);
 	}
 

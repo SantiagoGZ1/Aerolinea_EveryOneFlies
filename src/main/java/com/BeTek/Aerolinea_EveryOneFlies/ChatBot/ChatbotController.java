@@ -120,7 +120,7 @@ public class ChatbotController {
         String[] data = inputData.split(",");
 
         if (data.length != 9) {
-            throw new IllegalArgumentException("Formato de entrada inválido. Se esperaba 10 campos.");
+            throw new IllegalArgumentException("Formato de entrada inválido. Se esperaba 9 campos.");
         }
 
         Reservation reservation = new Reservation();
