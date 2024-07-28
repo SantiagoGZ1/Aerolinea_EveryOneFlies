@@ -16,10 +16,7 @@ import java.io.IOException;
 @Configuration
 
 public class DialogflowConfig {
-
-    @Value("${dialogflow.credentials.path}")
-    private String jsonPath;
-
+    String jsonPath = System.getenv("GOOGLE_APPLICATION_CREDENTIALS");
     @Bean
     public SessionsClient sessionsClient() throws IOException {
         // Ruta al archivo JSON de las credenciales
