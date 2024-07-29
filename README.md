@@ -3,6 +3,9 @@
     EVERYONE FLIES
     <br />
     <br />
+    Fly High, Fly With Us
+    <br />
+    <br />
       <img src="ImagesREADME/1.png" alt="LogoEveryoneFlies">
   </h1>
 </div>
@@ -30,6 +33,18 @@ Para completar el proceso de check-in y obtener un pase de abordar en formato PD
 </div>
 
 ---
+
+### Diagrama UML
+
+<div align="center">
+      <img src="ImagesREADME/DiagramaUML.png" alt="TicketPDF">
+</div>
+
+### Diagrama Entidad Relación
+
+<div align="center">
+      <img src="ImagesREADME/DiagramaREM.png" alt="TicketPDF">
+</div>
 
 ### Tecnologias utilizadas
 - **Lenguajes de programación:** Java
