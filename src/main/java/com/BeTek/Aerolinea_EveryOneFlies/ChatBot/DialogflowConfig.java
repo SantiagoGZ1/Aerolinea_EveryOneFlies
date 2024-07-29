@@ -9,6 +9,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -17,11 +18,10 @@ import java.io.IOException;
 @Configuration
 public class DialogflowConfig {
 
-    private static final String CREDENTIALS_PATH = "src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json";
-
     @Bean
     public SessionsClient sessionsClient() throws IOException {
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(CREDENTIALS_PATH));
+        String credentialsJson = System.getenv("GOOGLE_CREDENTIALS");
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new ByteArrayInputStream(credentialsJson.getBytes()));
         SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
                 .build();
