@@ -36,5 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-### ENV ###
-
+### Credenciales ###
+/src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
