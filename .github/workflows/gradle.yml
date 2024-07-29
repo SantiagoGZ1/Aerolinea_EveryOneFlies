@@ -27,8 +27,16 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
+    - name: Run build
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+      run: |
+        mkdir -p src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot
+        echo "$GOOGLE_CREDENTIALS" > src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
     - name: clean project
       run: chmod +x ./gradlew && ./gradlew clean
+    - name: Build with Gradle
+      run: ./gradlew build
     - name: run all test
       run: ./gradlew testClasses
     - name: create .jar and install
