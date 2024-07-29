@@ -32,6 +32,8 @@ jobs:
       run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
     - name: List files in ChatBot directory
       run: ls -la src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/
+    - name: Verify JSON File
+      run: cat src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
 
     - name: clean project
       run: chmod +x ./gradlew && ./gradlew clean
