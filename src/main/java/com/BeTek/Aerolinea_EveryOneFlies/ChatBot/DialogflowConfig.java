@@ -17,14 +17,11 @@ import java.io.IOException;
 @Configuration
 public class DialogflowConfig {
 
-    private static final Dotenv dotenv = Dotenv.load();
+    private static final String CREDENTIALS_PATH = "src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json";
 
     @Bean
     public SessionsClient sessionsClient() throws IOException {
-        String credentialsJson = dotenv.get("GOOGLE_APPLICATION_CREDENTIALS");
-
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(credentialsJson));
-
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(CREDENTIALS_PATH));
         SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
                 .build();
