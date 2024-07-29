@@ -24,7 +24,7 @@ public class DialogflowConfig {
         if (credentialsJson == null) {
             throw new IllegalStateException("GOOGLE_CREDENTIALS environment variable is not set");
         }
-        System.out.println("Credentials JSON: " + credentialsJson); // Agrega este mensaje para depuración
+        System.out.println("Credentials JSON: " + credentialsJson); // Agrega este log
         InputStream inputStream = new ByteArrayInputStream(credentialsJson.getBytes(StandardCharsets.UTF_8));
         GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream);
         return SessionsClient.create(SessionsSettings.newBuilder()
