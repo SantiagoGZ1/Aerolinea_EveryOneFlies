@@ -50,7 +50,7 @@ Para completar el proceso de check-in y obtener un pase de abordar en formato PD
 - **Lenguajes de programación:** Java
 - **Frameworks:** Spring Boot 
 - **Bases de Datos:** PostgreSQL
-- **Herramientas y Servicios:** Swagger, JUnit5, Insomnia, OpenPDF, Jakarta Mail
+- **Herramientas y Servicios:** Swagger, JUnit5, Insomnia, OpenPDF, Jakarta Mail, Google Cloud, Dialogflow
 
 ![Java](ImagesREADME/java24.png)
 ![Sping Boot](ImagesREADME/Spring-boot24.png)
@@ -60,6 +60,8 @@ Para completar el proceso de check-in y obtener un pase de abordar en formato PD
 ![Insomnia](ImagesREADME/Insomnia24.png)
 ![Insomnia](ImagesREADME/pdf.png)
 ![Jakarta Mail](ImagesREADME/Jakarta24.png)
+![Google Cloud](ImagesREADME/gcloud24.png)
+![Jakarta Mail](ImagesREADME/Dialogflow24.png)
 
 ### Integración Continua y Despliegue
 Implementamos integración continua con [GitHub Actions](https://docs.github.com/es/actions) para automatizar pruebas y compilaciones. El despliegue del microservicio se realizó en [Render](https://render.com/), facilitando un hosting y escalado eficientes.
