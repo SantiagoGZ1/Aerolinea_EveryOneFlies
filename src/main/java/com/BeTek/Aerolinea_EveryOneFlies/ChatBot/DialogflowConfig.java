@@ -5,13 +5,12 @@ import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.dialogflow.v2.*;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 
@@ -20,17 +19,11 @@ public class DialogflowConfig {
 
     @Bean
     public SessionsClient sessionsClient() throws IOException {
-        String credentialsJson = System.getenv("GOOGLE_CREDENTIALS");
-
-        if (credentialsJson == null || credentialsJson.isEmpty()) {
-            throw new IllegalStateException("GOOGLE_CREDENTIALS environment variable is not set");
-        }
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new ByteArrayInputStream(credentialsJson.getBytes()));
-        SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
+        InputStream inputStream = new FileInputStream("src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json");
+        GoogleCredentials credentials = GoogleCredentials.fromStream(inputStream);
+        return SessionsClient.create(SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
-                .build();
-
-        return SessionsClient.create(sessionsSettings);
+                .build());
     }
 
 }

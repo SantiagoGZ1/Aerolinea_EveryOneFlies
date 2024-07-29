@@ -27,10 +27,11 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
-    - name: Set GOOGLE_CREDENTIALS environment variable
-      run: echo "GOOGLE_CREDENTIALS=${{ secrets.GOOGLE_CREDENTIALS }}" >> $GITHUB_ENV
-    - name: Run build
-      run: echo "$GOOGLE_CREDENTIALS" > src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
+
+    - name: Set GOOGLE_CREDENTIALS JSON file
+      run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json
+
+#
     - name: clean project
       run: chmod +x ./gradlew && ./gradlew clean
     - name: Build with Gradle
