@@ -67,7 +67,7 @@ public class ChatbotController {
 
         if ("VerVuelos".equals(action)) {
             return getAvailableFlights();
-        } else if ("Reserva".equals(action)) {
+        } else if ("HacerReserva".equals(action) || "input.unknown".equals(action)) {
             return handleReservation(userId, message);
         }
 
@@ -112,28 +112,29 @@ public class ChatbotController {
             }
         } else {
             userStates.put(userId, true);
-            return "Por favor, ingresa los datos de la reserva en el siguiente formato: seat, dni, name, lastName, email, birthDate, numberCel, flightId, category.";
+            return "Por favor, ingresa los datos de la reserva en el siguiente formato: dni, name, lastName, email, birthDate, numberCel, flightId, category.";
         }
     }
 
     private Reservation parseReservationData(String inputData) {
         String[] data = inputData.split(",");
 
-        if (data.length != 9) {
-            throw new IllegalArgumentException("Formato de entrada inválido. Se esperaba 9 campos.");
+
+        if (data.length != 8) {
+            throw new IllegalArgumentException("Formato de entrada inválido. Se esperaba 8 campos.");
         }
 
         Reservation reservation = new Reservation();
-        reservation.setReservationDate(LocalDate.now()); // Establece la fecha actual
-        reservation.setSeat(Integer.parseInt(data[0].trim()));
+        reservation.setReservationDate(LocalDate.now());
+        reservation.setSeat(1);
 
         Passenger passenger = new Passenger();
-        passenger.setDni(data[1].trim());
-        passenger.setName(data[2].trim());
-        passenger.setLastName(data[3].trim());
-        passenger.setEmail(data[4].trim());
-        passenger.setBirthDate(LocalDate.parse(data[5].trim()));
-        passenger.setNumberCel(Integer.parseInt(data[6].trim()));
+        passenger.setDni(data[0].trim());
+        passenger.setName(data[1].trim());
+        passenger.setLastName(data[2].trim());
+        passenger.setEmail(data[3].trim());
+        passenger.setBirthDate(LocalDate.parse(data[4].trim()));
+        passenger.setNumberCel(Integer.parseInt(data[5].trim()));
 
 
         List<Passenger> passengers = new ArrayList<>();
@@ -143,8 +144,8 @@ public class ChatbotController {
 
 
         reservation.setFlight(new Flight());
-        reservation.getFlight().setId(Integer.parseInt(data[7].trim()));
-        reservation.setCategory(data[8].trim());
+        reservation.getFlight().setId(Integer.parseInt(data[6].trim()));
+        reservation.setCategory(data[7].trim());
 
         return reservation;
     }
