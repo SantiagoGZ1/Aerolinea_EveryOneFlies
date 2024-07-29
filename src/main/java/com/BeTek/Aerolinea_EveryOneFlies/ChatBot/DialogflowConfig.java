@@ -21,6 +21,10 @@ public class DialogflowConfig {
     @Bean
     public SessionsClient sessionsClient() throws IOException {
         String credentialsJson = System.getenv("GOOGLE_CREDENTIALS");
+
+        if (credentialsJson == null || credentialsJson.isEmpty()) {
+            throw new IllegalStateException("GOOGLE_CREDENTIALS environment variable is not set");
+        }
         GoogleCredentials credentials = GoogleCredentials.fromStream(new ByteArrayInputStream(credentialsJson.getBytes()));
         SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
