@@ -20,9 +20,12 @@ public class DialogflowConfig {
 
     @Bean
     public SessionsClient sessionsClient() throws IOException {
-        String credentialsPath = "src/main/java/com/BeTek/Aerolinea_EveryOneFlies/ChatBot/everyoneflies-ewlv-bb71cf9941cb.json";
+        String credentialsJson = System.getenv("GOOGLE_CREDENTIALS");
 
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(credentialsPath));
+        if (credentialsJson == null || credentialsJson.isEmpty()) {
+            throw new IllegalStateException("GOOGLE_CREDENTIALS environment variable is not set");
+        }
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new ByteArrayInputStream(credentialsJson.getBytes()));
         SessionsSettings sessionsSettings = SessionsSettings.newBuilder()
                 .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
                 .build();
