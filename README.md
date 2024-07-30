@@ -32,6 +32,14 @@ Para completar el proceso de check-in y obtener un pase de abordar en formato PD
       <img src="ImagesREADME/Ticket500.jpg" alt="TicketPDF">
 </div>
 
+## Sky Bot
+
+Hemos implementado un bot llamado Sky utilizando Dialogflow de Google. Sky facilita la interacción con los usuarios mediante la automatización de las siguientes tareas:
+
+- **Reservas de vuelos:** Los usuarios pueden realizar reservas de vuelos a través de una conversación natural con Sky. <br /> Para hacer una reserva, el bot envia un mensaje solicitando tus datos con el siguiente formato:<br /> "Por favor, ingresa los datos de la reserva en el siguiente formato: dni, nombre, apellido, email, fecha de nacimiento, número de celular, id del vuelo, categoría del asiento."
+
+- **Consulta de vuelos disponibles:**  Sky proporciona información actualizada sobre los vuelos disponibles en el momento de la consulta.
+
 ---
 
 ### Diagrama UML
@@ -65,8 +73,6 @@ Para completar el proceso de check-in y obtener un pase de abordar en formato PD
 
 ### Integración Continua y Despliegue
 Implementamos integración continua con [GitHub Actions](https://docs.github.com/es/actions) para automatizar pruebas y compilaciones. El despliegue del microservicio se realizó en [Render](https://render.com/), facilitando un hosting y escalado eficientes.
-
-Si deseas explorarlo, accede al siguiente enlace:
 
 
 
