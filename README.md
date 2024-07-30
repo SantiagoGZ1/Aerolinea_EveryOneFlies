@@ -58,7 +58,7 @@ Hemos implementado un bot llamado Sky utilizando Dialogflow de Google. Sky facil
 - **Lenguajes de programación:** Java
 - **Frameworks:** Spring Boot 
 - **Bases de Datos:** PostgreSQL
-- **Herramientas y Servicios:** Swagger, JUnit5, Insomnia, OpenPDF, Jakarta Mail, Google Cloud, Dialogflow
+- **Herramientas y Servicios:** Swagger, JUnit5, Insomnia, OpenPDF, Jakarta Mail, Google Cloud, Dialogflow, Render, Railway
 
 ![Java](ImagesREADME/java24.png)
 ![Sping Boot](ImagesREADME/Spring-boot24.png)
@@ -72,7 +72,7 @@ Hemos implementado un bot llamado Sky utilizando Dialogflow de Google. Sky facil
 ![Jakarta Mail](ImagesREADME/Dialogflow24.png)
 
 ### Integración Continua y Despliegue
-Implementamos integración continua con [GitHub Actions](https://docs.github.com/es/actions) para automatizar pruebas y compilaciones. El despliegue del microservicio se realizó en [Render](https://render.com/), facilitando un hosting y escalado eficientes.
+Implementamos integración continua con [GitHub Actions](https://github.com/SantiagoGZ1/Aerolinea_EveryOneFlies/actions) para automatizar pruebas y compilaciones. La integración de bases de datos se realizó en [Render](https://render.com/), mientras que el despliegue del microservicio se llevó a cabo en [Railway](https://railway.app/), facilitando un hosting y escalado eficientes.
 
 
 
