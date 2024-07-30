@@ -70,6 +70,8 @@ Hemos implementado un bot llamado Sky utilizando Dialogflow de Google. Sky facil
 ![Jakarta Mail](ImagesREADME/Jakarta24.png)
 ![Google Cloud](ImagesREADME/gcloud24.png)
 ![Jakarta Mail](ImagesREADME/Dialogflow24.png)
+![Jakarta Mail](ImagesREADME/render.jpg)
+![Jakarta Mail](ImagesREADME/railway1.png)
 
 ### Integración Continua y Despliegue
 Implementamos integración continua con [GitHub Actions](https://github.com/SantiagoGZ1/Aerolinea_EveryOneFlies/actions) para automatizar pruebas y compilaciones. La integración de bases de datos se realizó en [Render](https://render.com/), mientras que el despliegue del microservicio se llevó a cabo en [Railway](https://railway.app/), facilitando un hosting y escalado eficientes.
