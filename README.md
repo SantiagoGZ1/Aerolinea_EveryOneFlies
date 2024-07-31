@@ -81,9 +81,14 @@ Implementamos integración continua con [GitHub Actions](https://github.com/Sant
 
 ## Contributors
 
-<a href="https://github.com/SantiagoGZ1/Aerolinea_EveryOneFlies/graphs/contributors" target="_blank">
-  <img src="ImagesREADME/participantes.png" alt="participantes">
-</a>
+<img src="ImagesREADME/participantes.png" alt="participantes">
+
+## LinkedIn 🔵
+
+- [Gina Loaiza](https://www.linkedin.com/in/ginaloaiza-dev/)
+- [Santiago Garcia](https://www.linkedin.com/in/santiago-garcia-backendtech/)
+- [Mariana Saldarriaga](https://www.linkedin.com/in/mariana-saldarriaga-backend/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- [Samuel Cifuentes](https://www.linkedin.com/in/samucifbackend/)
 
 ## Expresiones de Gratitud
 
